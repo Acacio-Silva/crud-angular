@@ -1,0 +1,27 @@
+<mat-card>
+
+    <mat-card-title>Alterar Usuário</mat-card-title>
+    
+        <form>
+            <mat-form-field>
+                <input matInput 
+                name="name"  disabled
+                [(ngModel)]="user.name" 
+                />
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput disabled
+                name="cpf"
+                [(ngModel)]="user.cpf" 
+                />
+            </mat-form-field>
+
+        </form>
+<button mat-raised-button (click)="deleteUser()" color="warn">
+    Deletar Usuario
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+
+</mat-card>

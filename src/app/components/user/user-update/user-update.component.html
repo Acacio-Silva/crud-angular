@@ -1,0 +1,27 @@
+<mat-card>
+
+    <mat-card-title>Alterar Usuário</mat-card-title>
+    
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Nome do Usuário" 
+                name="name"
+                [(ngModel)]="user.name" 
+                />
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Digite o CPF"
+                name="cpf"
+                [(ngModel)]="user.cpf" 
+                />
+            </mat-form-field>
+
+        </form>
+<button mat-raised-button (click)="updateUser()" color="warn">
+    Atualizar Usuario
+</button>
+<button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+
+</mat-card>
